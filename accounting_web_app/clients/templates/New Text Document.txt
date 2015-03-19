@@ -1,0 +1,8 @@
+<h2>Total</h2>
+
+{% for x in items %}
+<p>Total		-- {{ x.total }}</p>
+
+<hr />
+{% endfor %}
+

@@ -1,13 +1,12 @@
 <h2>Projects</h2>
 
 {% for x in items %}
-
+<p>Name of the clients		-- {{ x.clients }}</p>
 <p>Name of the Project		-- {{ x.Name_of_the_project }}</p>
 <p>Technology used		-- {{ x.Technology_used }}</p>
 <p>Start date			-- {{ x.Start_date }}</p>
 <p>Hours spent			-- {{ x.Hours_spent }}</p>
 <p>Per hour cost		-- {{ x.Per_hour_cost }}</p>
-
 <hr />
 {% endfor %}
 
