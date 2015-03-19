@@ -9,7 +9,7 @@ class projects(models.Model):
     clients = models.ForeignKey(clients)
     Name_of_the_project = models.CharField(max_length=200)
     Technology_used = models.CharField(max_length=200)
-    Start_date = models.DateTimeField('date published')
+    Start_date = models.DateTimeField('Start date')
     Hours_spent = models.PositiveIntegerField()
     Per_hour_cost = models.PositiveIntegerField()
    
