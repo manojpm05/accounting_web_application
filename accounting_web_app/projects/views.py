@@ -4,11 +4,6 @@ from django.shortcuts import render_to_response
 from django.contrib import admin
 admin.autodiscover()
 
-def index(request): #Define our function
- 
-      
-    return render_to_response('index.html')
-   
  
 def client(request): #Define our function
  

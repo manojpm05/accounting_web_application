@@ -1,12 +1,11 @@
-from django.conf.urls import patterns, include, url
-
+from django.conf.urls import patterns, url,include
 from django.contrib import admin
-admin.autodiscover()
+from clients import views
+
 
 urlpatterns = patterns('',
-    # Examples:
-    # url(r'^$', 'accounting_web_app.views.home', name='home'),
-    # url(r'^blog/', include('blog.urls')),
-
+    url(r'^clients/', include('clients.urls')), 
+    url(r'^projects/', include('projects.urls')),         
     url(r'^admin/', include(admin.site.urls)),
+    url(r'^$', views.index, name='index'),
 )
